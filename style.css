@@ -115,7 +115,7 @@ footer{
 
   .nav {
     flex-wrap: wrap;
-    line-height: 10vh;
+    line-height: 5vh;
   }
 
   .nav a button{
