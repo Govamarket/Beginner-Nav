@@ -1,4 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Variables for Light/Dark Mode */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --nav-bg: #222;
+    --nav-text: #fff;
+    --input-bg: #ffffff;
+    --input-text: #000000;
+    --border-color: #ddd;
+}
+
+body.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --nav-bg: #111;
+    --nav-text: #ffffff;
+    --input-bg: #333;
+    --input-text: #ffffff;
+    --border-color: #555;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +31,12 @@ font-family: "Roboto", sans-serif;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
@@ -22,11 +50,11 @@ font-family: "Roboto", sans-serif;
     padding-top: 2vh;
     position: relative;
     padding: 10px;
-    background: #222;
+    background: var(--nav-bg);
 }
 .logo{
     text-decoration: none;
-    color: #fff;
+    color: var(--nav-text);
 
 }
 
@@ -41,7 +69,7 @@ font-family: "Roboto", sans-serif;
 
 .nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: var(--nav-text);
 }
 
 
@@ -66,6 +94,9 @@ textarea {
     height: 20vh;
     margin: 2vh auto 50px;
     text-align: center;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 1px solid var(--border-color);
 }
 .tar{
     display: inline-block;
@@ -74,15 +105,31 @@ textarea {
 .user-name{
     padding: 10px;
     width: 300px;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 1px solid var(--border-color);
 }
 
 .menu-btn{
     display: none;
     background: none;
-    color: #fff;
+    color: var(--nav-text);
     cursor: pointer;
     font-size: 25px;
     border: none;
+}
+
+.dark-mode-toggle {
+    background: none;
+    color: var(--nav-text);
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.2);
 }
 
 footer{
