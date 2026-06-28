@@ -44,17 +44,6 @@ font-family: "Roboto", sans-serif;
     color: #fff;
 }
 
-.nav a button{
-    width: 100px;
-    height: 30px;
-    border: none;
-    color: #0308a0;
-    border-radius: 5px 5px 5px 5px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    font-weight: 600;
-}
 
 article {
     display: block;
@@ -125,10 +114,7 @@ footer{
     line-height: 20px;
   }
 
-  .nav a button{
-    margin-top: -7px;
-  }
-
+ 
 }
 
 
