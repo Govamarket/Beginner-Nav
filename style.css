@@ -105,7 +105,9 @@ footer{
 @media(max-width: 768px) {
     .menu-btn{
         display: block;
+        margin-top: -7px;
     }
+
 
     .nav-links{
         display: none;
@@ -124,7 +126,7 @@ footer{
   }
 
   .nav a button{
-    margin-top: 10px;
+    margin-top: -7px;
   }
 
 }
